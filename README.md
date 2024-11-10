@@ -1,4 +1,7 @@
-# Learning Java #
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+# Learning Java <i class="fa-brands fa-java"></i>#
 
 Repo creata per mantenere una traccia del mio studio del linguaggio di programmazione Java.
 
