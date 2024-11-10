@@ -1,4 +1,5 @@
-# Learning Java #
+
+# Learning Java ☕ #
 
 Repo creata per mantenere una traccia del mio studio del linguaggio di programmazione Java.
 
