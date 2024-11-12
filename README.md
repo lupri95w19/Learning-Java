@@ -7,4 +7,4 @@ Quello che già conoscevo durante lo studio non sarà scritto.
   <img height="300" width="300" src="https://brandslogos.com/wp-content/uploads/images/java-logo-1.png" alt="Marchio Java"/>
 </div>
 
-## Il file "Main.java" contiene tutti gli appunti che sto segnando, mentre nei file singoli sono presenti le nozioni singolarmente.
+### Il file "Main.java" contiene tutti gli appunti che sto segnando, mentre nei file singoli sono presenti le nozioni singolarmente.
