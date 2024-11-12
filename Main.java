@@ -173,6 +173,18 @@ public class Main {
         }
         Fine esempio ArrayList */
 
+        // OOP
+        // Creiamo un'istanza della classe in un altro file per essere più organizzati (Persona.java)
+        // Esempio senza un costruttore, la classe sarà sempre uguale
+        //Persona persona1 = new Persona();
+
+        // Esempio con un costruttore, posso passare degli argomenti
+        Persona persona1 = new Persona("Luca", "Privitera", 23, "Viola");
+        Persona persona2 = new Persona("Luca", "Rossi", 25, "Blu");
+        System.out.println(persona1.cognome);
+        System.out.println(persona2.cognome);
+        persona1.saluta();
+
         // Overloaded methods
         // Con gli overloaded methods possiamo riscrivere le stesse funzioni ma per usarle in casistiche diverse
         // I methods vanno fuori dal public static void main
