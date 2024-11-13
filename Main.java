@@ -277,5 +277,20 @@ public class Main {
 
         //Fine esempio copiare gli oggetti
 
+        // Polimorfismo
+        /* Inizio esempio polimorfismo
+        // Studente e Insegnante estendono la classe che consente il polimorfismo
+        
+        Studente studente1 = new Studente("Luca", "Privitera");
+        Insegnante insegnante1 = new Insegnante("Fabio", "Mollura");
+        
+        // Classe del polimorfismo è un array col nome classe, all'interno abbiamo studente1 e insegnante1
+        PersonaPoli[] classe = { studente1, insegnante1 };
+        
+        // Per ogni Personapolimorfa persona che fa riferimento all'array classe, faccio un saluto
+        for (PersonaPoli persona : classe) {
+            persona.saluta();
+        }
+            Fine esempio polimorfismo */
     }
 }
