@@ -227,5 +227,55 @@ public class Main {
         private           si          no           no             no
         
         Fine tabella modificatori di accesso */
+
+        // Copiare gli oggetti
+        /* Inizio esempio */
+        // Creo due oggetti persona
+        Persona persona1 = new Persona("Luca", "Privitera", 23, "Viola");
+        Persona persona2 = new Persona("Marco", "Rossi", 12, "Azzurro");
+
+        // Qui otterrò in output il punto dove sono salvati
+        System.out.println("Inizio");
+        System.out.println("Memoria di persona 1: " + persona1);
+        System.out.println("Memoria di persona 2: " + persona2);
+        System.out.println("Persona 1 nome: " + persona1.getNome());
+        System.out.println("Persona 2 nome: " + persona2.getNome());
+
+        //Qui otterrò i corrispettivi nomi
+        /* ESEMPI con campi public 
+        System.out.println(persona1.nome);
+        System.out.println(persona2.nome);
+        
+        persona2 = persona1;
+        System.out.println("Risultati dopo Persona2 = Persona1");
+        System.out.println(persona1);
+        System.out.println(persona2);
+        System.out.println(persona1.nome);
+        System.out.println(persona2.nome);
+        
+        // Persona2 adesso è persona 1, come se lo avesse inglobato, infatti ha la stessa location in memoria... è una copia ma è essa stessa persona1.
+        */
+
+        /* ESEMPI con il private */
+        System.out.println("Qui inizia il copy");
+
+        // Il metodo corretto è quello del copy, perché si sarà uguale ma avrà una cella di memoria diversa
+        persona2.copy(persona1);
+        System.out.println("Memoria di persona 1: " + persona1);
+        System.out.println("Memoria di persona 2: " + persona2);
+
+        System.out.println("Persona 1 nome: " + persona1.getNome());
+        System.out.println("Persona 2 nome: " + persona2.getNome());
+
+        // Questo fa si che persona2 diventi persona1, è come se fosse un altro modo per riferirsi a persona1, perché gli va a copiare anche la cella di memoria
+        persona2 = persona1;
+        System.out.println("Risultati dopo Persona2 = Persona1");
+        System.out.println(persona1);
+        System.out.println(persona2);
+        System.out.println(persona1.getNome());
+        System.out.println(persona2.getNome());
+
+        //Fine esempio copiare gli oggetti
+
     }
 }
