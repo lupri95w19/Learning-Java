@@ -179,11 +179,13 @@ public class Main {
         //Persona persona1 = new Persona();
 
         // Esempio con un costruttore, posso passare degli argomenti
+        /* Inizio esempio OOP 
         Persona persona1 = new Persona("Luca", "Privitera", 23, "Viola");
         Persona persona2 = new Persona("Luca", "Rossi", 25, "Blu");
         System.out.println(persona1.cognome);
         System.out.println(persona2.cognome);
         persona1.saluta();
+        Fine esempio OOP */
 
         // Overloaded methods
         // Con gli overloaded methods possiamo riscrivere le stesse funzioni ma per usarle in casistiche diverse
@@ -215,5 +217,15 @@ public class Main {
         }
         Fine esempio overloaded methods */
         // Se si decommenta serve aggiungere una }
+
+        // Modificatori di accesso, servono ad aggiungere uno strato di sicurezza aggiuntivo
+        /* Inizio tabella modificatori di accesso
+                        class       package     subclass        world 
+        public            si          si           si             si
+        protected         si          si           si             no
+        default           si          si           no             no
+        private           si          no           no             no
+        
+        Fine tabella modificatori di accesso */
     }
 }
