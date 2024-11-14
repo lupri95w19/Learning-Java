@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 // Serve per gestire le eccezioni nel caso in cui abbiamo un tipo di dato che non rispecchia il dato che è stato dichiarato inizialmente, esempio int e poi mettiamo una stringa
 import java.util.InputMismatchException;
-
+import java.util.Iterator;
 // Serve a lavorare con i File file = new File("prova.txt");
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -485,5 +485,32 @@ public class Main {
         // capitali.clear();
         
         Fine esempio Hashmap*/
+
+        // Iterator
+        /* Inizio esempio iterator
+        ArrayList<String> persone = new ArrayList<String>();
+        // Il next partirà non da Luca, ma dal codice sopra, quindi ArrayList <String>...
+        persone.add("Alberto");
+        persone.add("Luca");
+        persone.add("Gianni");
+        persone.add("Ignazio");
+        
+        // Iterator di tipo String, come le persone
+        // Iterator ha bisogno delle reference e non delle primitive, quindi non int ma Integer in caso
+        Iterator<String> it = persone.iterator();
+        System.out.println(it.next());
+        
+        System.out.println("Qui inizia il ciclo while");
+        while (it.hasNext()) {
+            String persona = it.next();
+            if (persona == "Ignazio") {
+                it.remove();
+            }
+        }
+        
+        // Qui stampiamo persone, che sarebbe l'arrayList aggiornato, dopo i controlli del while
+        System.out.println(persone);
+        
+        Fine esempio*/
     }
 }
