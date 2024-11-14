@@ -5,13 +5,16 @@ import java.util.Scanner;
 // Con gli ArrayList possiamo creare degli array senza una dimensione fissa
 import java.util.ArrayList;
 
+// Serve per gestire le eccezioni nel caso in cui abbiamo un tipo di dato che non rispecchia il dato che è stato dichiarato inizialmente, esempio int e poi mettiamo una stringa
+import java.util.InputMismatchException;
+
 public class Main {
     public static void main(String[] args) {
         // Semplice print in una nuova line, System e non system altrimenti Java piange
         // System.out.println("c");
 
         // Esempio dello scanner
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
         /* Inizio scanner
         
         // Praticamente quello che arriverà dall'utente, verrò associato al nome
@@ -37,7 +40,7 @@ public class Main {
 
         // In questo modo chiudo lo scanner, altrimenti presumo che vada a utilizzare sempre memoria, appunto altrimenti mi dice "Resource leak"
         // Forse andava fatto sopra(?)
-        scanner.close();
+        // scanner.close();
 
         // Switch potrebbe essere utile in alcune istanze al posto dell'if, anche se meno usato
         String nome = "Luca";
@@ -292,5 +295,46 @@ public class Main {
             persona.saluta();
         }
             Fine esempio polimorfismo */
+
+        /* Inizio esempio exception handling
+        Scanner scanner = new Scanner(System.in);
+        // Divisione per l'eccezione del x / 0
+        System.out.println("Divisione");
+        
+        // Dichiaro fuori così posso ritrovarmela dopo nel catch
+        int x = 0;
+        int y = 0;
+        
+        // Praticamente sarebbe così, il try prova a eseguire il codice, e se trova un qualsiasi errore (in questi caso "ArithmeticException error", "InputMismatchException error" o genericamente "Exception") esegue il codice del catch
+        try {
+        
+            System.out.println("Inserisci un numero");
+            // int x = scanner.nextInt();
+            x = scanner.nextInt();
+        
+            System.out.println("Inserisci un secondo numero");
+            // int y = nextInt(); questo non andrebbe bene perché la y non arriverebbe al catch
+            y = scanner.nextInt();
+        
+            int result = x / y;
+            System.out.println("Il risultato è: " + result);
+        
+            scanner.close();
+        } catch (ArithmeticException error) {
+            System.out.println("Non puoi dividere per " + x + " per " + y);
+        
+            // In caso in input non arrivi un numero
+        } catch (InputMismatchException error) {
+            System.out.println("Non è stato inserito un numero valido");
+        
+            // Errore generico
+        } catch (Exception error) {
+            System.out.println("C'è stato un problema generico");
+        
+            // Infine chiudiamo lo scanner, altrimenti abbiamo un memory leak
+        } finally {
+            scanner.close(); // Assicurati di chiudere lo scanner qui per evitare risorse aperte
+        }
+            Fine esempio exception handling */
     }
 }
