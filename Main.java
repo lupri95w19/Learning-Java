@@ -45,7 +45,16 @@ public class Main {
         System.out.println("Ciao " + nome +" " + cognome + " e hai " + eta + " anni" + " e vivi in/a " + citta);
         
         Fine scanner*/
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // In questo modo chiudo lo scanner, altrimenti presumo che vada a utilizzare sempre memoria, appunto altrimenti mi dice "Resource leak"
         // Forse andava fatto sopra(?)
         // scanner.close();
@@ -92,7 +101,16 @@ public class Main {
             }
         }
         Fine esempio Array 2D o multidimensionali*/
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // Wrapper Class
         // Con le wrapper class possiamo utilizzare i metodi, per esempio .equals anche sulle primitive, ma occhio che sono più lente
         /* Inizio esempio Wrapper Class 
@@ -111,7 +129,16 @@ public class Main {
         String stringa = "String non necessita wrapper";
         
         Fine esempio Wrapper Class*/
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // ArrayList
         // Gli array in java quando vengono inizializzati, devono essere inizializzati già sapendo quale sarà il loro valore massimo, oltre quello non si potrà eccedere
         // Con gli ArrayList invece possiamo raggirare questa imposizione
@@ -183,7 +210,16 @@ public class Main {
             }
         }
         Fine esempio ArrayList */
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // OOP
         // Creiamo un'istanza della classe in un altro file per essere più organizzati (Persona.java)
         // Esempio senza un costruttore, la classe sarà sempre uguale
@@ -197,7 +233,16 @@ public class Main {
         System.out.println(persona2.cognome);
         persona1.saluta();
         Fine esempio OOP */
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // Overloaded methods
         // Con gli overloaded methods possiamo riscrivere le stesse funzioni ma per usarle in casistiche diverse
         // I methods vanno fuori dal public static void main
@@ -228,7 +273,16 @@ public class Main {
         }
         Fine esempio overloaded methods */
         // Se si decommenta serve aggiungere una }
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // Modificatori di accesso, servono ad aggiungere uno strato di sicurezza aggiuntivo
         /* Inizio tabella modificatori di accesso
                         class       package     subclass        world 
@@ -238,7 +292,16 @@ public class Main {
         private           si          no           no             no
         
         Fine tabella modificatori di accesso */
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // Copiare gli oggetti
         /* Inizio esempio */
         // Creo due oggetti persona
@@ -287,7 +350,16 @@ public class Main {
         System.out.println(persona2.getNome());
 
         //Fine esempio copiare gli oggetti
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // Polimorfismo
         /* Inizio esempio polimorfismo
         // Studente e Insegnante estendono la classe che consente il polimorfismo
@@ -303,7 +375,16 @@ public class Main {
             persona.saluta();
         }
             Fine esempio polimorfismo */
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         /* Inizio esempio exception handling
         Scanner scanner = new Scanner(System.in);
         // Divisione per l'eccezione del x / 0
@@ -344,7 +425,16 @@ public class Main {
             scanner.close(); // Assicurati di chiudere lo scanner qui per evitare risorse aperte
         }
             Fine esempio exception handling */
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // Lavorare con i file
         /* Inizio esempio lavorare con i file
         File file = new File("prova.txt");
@@ -386,7 +476,16 @@ public class Main {
             System.out.println("Il file non esiste");
         }
         Fine esempio lavorare con i file*/
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         /* Inizio esempio file Writer
         // Va fatto sempre in un try catch, perché è considerato come codice pericoloso perché potrebbe dare errore
         try {
@@ -402,7 +501,11 @@ public class Main {
             e.printStackTrace();
         }
          Fine esempio file writer*/
-
+        //
+        //
+        //
+        // 
+        // 
         /* Inizio esempio file reader 
         // Anche lui ha bisogno del try catch
         
@@ -435,7 +538,16 @@ public class Main {
             }
         }
         Fine esempio file reader */
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // Casting 
         /* Inizio esempio casting 
         // Il casting ci permette di passare da un tipo di dato più piccolo a uno più grande
@@ -455,7 +567,16 @@ public class Main {
         System.out.println("(int) 5.8 equivale a: " + z);
         
         Fine esempio casting*/
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // Hashmap
         /* Inizio esempio Hashmap 
         // Le hashmap sono simili agli array 2d, ma ci permettono di salvare con chiave : valore
@@ -485,7 +606,16 @@ public class Main {
         // capitali.clear();
         
         Fine esempio Hashmap*/
-
+        //
+        //
+        //
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
+        // 
         // Iterator
         /* Inizio esempio iterator
         ArrayList<String> persone = new ArrayList<String>();
@@ -511,6 +641,6 @@ public class Main {
         // Qui stampiamo persone, che sarebbe l'arrayList aggiornato, dopo i controlli del while
         System.out.println(persone);
         
-        Fine esempio*/
+        Fine esempio iterator*/
     }
 }
